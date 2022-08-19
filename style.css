@@ -7,6 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    overflow: hidden;
 }
 
 h1 {
@@ -16,22 +17,24 @@ h1 {
 
 main {
     background-color: brown;
-    height: 90vh;
+    height: 91vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 7rem 12rem;
+    padding-top: 5rem !important;
     column-gap: 3px;
     row-gap: 3px;
 }
 
 .square {
     width: 25%;
+    height: 170px;
     background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     cursor: pointer;
 }
 
