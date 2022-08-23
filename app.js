@@ -39,7 +39,7 @@ function showNotif(message) {
 }
 
 function turnNotif(player) {
-    showNotif(`<p>Player ${player}'s turn!</p>`)
+    showNotif(`<p>Player ${player}'s turn!</p>`);
 }
 
 function initSquares() {
@@ -51,7 +51,6 @@ function initSquares() {
 function drawLine(square) {
     if(emptySquares > 0) {
         emptySquares--;
-        emptySquares && turnNotif(player);
 
         if(!square.textContent) {
             if(player === 1) {
@@ -74,6 +73,7 @@ function drawLine(square) {
                 }
             }
             player = player === 1 ? 2 : 1;
+            emptySquares && turnNotif(player);
         }
     }
 }
